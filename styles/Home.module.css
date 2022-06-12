@@ -1,0 +1,86 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.prefectures_list {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+
+.prefectures_itemlist {
+  display: grid;
+  row-gap: 8px;
+  column-gap: 8px;
+  margin-top: 20px;
+  width: 100%;
+  grid-template-columns: repeat(6,1fr);
+  padding-inline-start: 0px;
+}
+
+.prefectures_item {
+  font-size: 1rem;
+}
+
+.prefectures_checkbox {
+  display: none;
+}
+
+.prefectures_label {  
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px 5px;
+}
+
+.prefectures_checkbox:checked + .prefectures_label {
+  background-color: #2547c0;
+  border-color: #2547c0;
+  color: #fff;
+}
+
+.guidetext_display {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.guidetext_hidden {
+  display: none;
+}
+
+.population_graph {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .prefectures_itemlist {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .prefectures_label {  
+    font-size: 0.9rem;
+    padding: 5px 5px;
+  }
+}

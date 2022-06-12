@@ -1,0 +1,19 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 游ゴシック Medium,YuGothic,YuGothicM,Hiragino Kaku Gothic ProN,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li, ol, ul {
+  list-style-type: none;
+}
